@@ -4,12 +4,10 @@ interface IProps {
   text: string;
 }
 
-const App = (props: IProps) => {
+export const Button = (props: IProps) => {
   return (
     <button>
       {props.text}
     </button>
   );
 };
-
-export default App;

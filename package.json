@@ -1,25 +1,52 @@
 {
   "name": "storybook-typescript-react-library",
   "version": "0.1.0",
-  "private": true,
+  "main": "build/lib/index.js",
+  "types": "build/lib/index.d.ts",
+  "files": [
+    "build/lib"
+  ],
+  "scripts": {
+    "storybook": "start-storybook -p 9009",
+    "build": "npm run build-lib && build-storybook",
+    "build-lib": "tsc && npm run copy-css-to-lib",
+    "build-storybook": "build-storybook",
+    "copy-css-to-lib": "cpx \"./src/**/*.css\" ./build/lib",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:update": "jest --coverage -u",
+    "start": "npm run storybook"
+  },
   "dependencies": {
+    "@storybook/addon-knobs": "^4.0.12",
     "@types/jest": "^23.3.10",
     "@types/node": "^10.12.12",
     "@types/react": "^16.7.13",
     "@types/react-dom": "^16.0.11",
+    "@types/storybook-addon-jsx": "^5.4.0",
+    "@types/storybook__addon-actions": "^3.4.1",
+    "@types/storybook__addon-info": "^3.4.2",
+    "@types/storybook__addon-links": "^3.3.3",
+    "cpx": "^1.5.0",
     "react": "^16.6.3",
+    "react-docgen-typescript-loader": "^3.0.0",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1",
     "typescript": "^3.2.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@storybook/addon-actions": "^4.1.0-alpha.11",
+    "@storybook/addon-info": "^4.0.12",
+    "@storybook/addon-links": "^4.1.0-alpha.11",
+    "@storybook/addons": "^4.1.0-alpha.11",
+    "@storybook/react": "^4.1.0-alpha.11",
+    "@types/storybook__react": "^4.0.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.4",
+    "jest": "^23.6.0",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "ts-jest": "^23.10.5"
   },
   "browserslist": [
     ">0.2%",
@@ -44,8 +71,5 @@
     "testMatch": [
       "**/__tests__/*.+(ts|tsx|js)"
     ]
-  },
-  "devDependencies": {
-    "ts-jest": "^23.10.5"
   }
 }

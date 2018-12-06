@@ -8,7 +8,9 @@
         "quotemark": [
             true,
             "single"
-        ]
+        ],
+        "ordered-imports": false,
+        "trailing-comma": false
     },
     "rulesDirectory": []
 }
