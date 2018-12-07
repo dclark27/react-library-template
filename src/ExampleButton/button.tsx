@@ -1,13 +1,14 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 
 interface IProps {
   text: string;
 }
 
-export const Button = (props: IProps) => {
+export const ExampleButton = (props: IProps) => {
   return (
-    <button>
+    <Button>
       {props.text}
-    </button>
+    </Button>
   );
 };

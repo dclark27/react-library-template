@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Button } from '../button';
+import { ExampleButton } from '../button';
 
 it('renders without crashing', () => {
-  shallow(<Button text='hey' />);
+  shallow(<ExampleButton text='hey' />);
 });
