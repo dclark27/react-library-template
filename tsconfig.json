@@ -1,22 +1,42 @@
 {
   "compilerOptions": {
     "outDir": "build/lib",
-    "target": "es5",
     "module": "esnext",
-    "jsx": "react",
-    "strict": true,
-    "esModuleInterop": true,
-    "allowJs": true,
-    "skipLibCheck": false,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
+    "target": "es5",
+    "lib": [
+      "es5",
+      "es6",
+      "es7",
+      "es2017",
+      "dom"
+    ],
+    "sourceMap": true,
+    "allowJs": false,
+    "jsx": "preserve",
     "moduleResolution": "node",
+    "rootDirs": [
+      "src",
+      "stories"
+    ],
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": false,
+    "esModuleInterop": true,
+    "strict": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true
   },
   "include": [
-    "src"
+    "src/**/*"
   ],
   "exclude": [
     "node_modules",
