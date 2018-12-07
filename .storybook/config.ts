@@ -1,7 +1,7 @@
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { configure, addDecorator } from '@storybook/react';
-import { withOptions } from '@storybook/addon-options';
-import { themes } from '@storybook/components';
+import { withInfo } from '@storybook/addon-info';
+import { withKnobs } from '@storybook/addon-knobs';
 
 const req = require.context('../src/stories', true, /.stories.tsx$/);
 
@@ -9,13 +9,7 @@ function loadStories() {
   req.keys().forEach(req);
 }
 
-addDecorator(
-  withOptions({
-    theme: {
-      name: 'Foo',
-      theme: themes.dark,
-    },
-  })
-);
+addDecorator(withInfo());
+addDecorator(withKnobs);
 
 configure(loadStories, module);

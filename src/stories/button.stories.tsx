@@ -1,11 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { text } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 import { ExampleButton } from '../ExampleButton/button';
 
 const stories = storiesOf('Button', module);
-stories.addDecorator(withKnobs);
 
 stories.add(
   'with text',
