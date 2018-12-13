@@ -11,9 +11,7 @@
     "build": "npm run lint && npm run build-lib && build-storybook",
     "build-lib-watch": "tsc -w",
     "build-lib": "tsc && npm run copy-css-to-lib && npm run copy-svg-to-lib && npm run copy-png-to-lib && npm run copy-woff2-to-lib",
-    "test": "react-scripts test --env=jsdom",
     "test:coverage": "npm test -- --coverage",
-    "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "-c .storybook -o .out",
     "copy-css-to-lib": "cpx \"./src/**/*.css\" ./build/lib",
@@ -29,9 +27,6 @@
     "@storybook/addon-links": "^4.1.0-alpha.11",
     "@storybook/addon-options": "^4.0.12",
     "@storybook/react": "^4.1.0-alpha.11",
-    "@types/enzyme": "^3.1.15",
-    "@types/enzyme-adapter-react-16": "^1.0.3",
-    "@types/jest": "^23.3.10",
     "@types/node": "^10.12.12",
     "@types/react": "^16.7.13",
     "@types/react-bootstrap": "^0.32.15",
@@ -54,7 +49,6 @@
     "react-docgen-typescript-loader": "^3.0.0",
     "react-docgen-typescript-webpack-plugin": "^1.1.0",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1",
     "typescript": "^3.2.1"
   },
   "browserslist": [
