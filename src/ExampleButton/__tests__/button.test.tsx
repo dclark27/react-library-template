@@ -1,7 +1,11 @@
 import React from 'react';
-import { shallow } from 'enzyme';
 import { ExampleButton } from '../button';
+import renderer from 'react-test-renderer';
 
-it('renders without crashing', () => {
-  shallow(<ExampleButton text='hey' />);
+test('Link changes the class when hovered', () => {
+  const component = renderer.create(
+    <ExampleButton text='Cute button!' />,
+  );
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });

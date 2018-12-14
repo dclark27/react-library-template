@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from 'react-bootstrap/lib/Button';
 
 interface IProps {
   /**
@@ -10,8 +9,8 @@ interface IProps {
 
 export const ExampleButton = (props: IProps) => {
   return (
-    <Button>
+    <button>
       {props.text}
-    </Button>
+    </button>
   );
 };
