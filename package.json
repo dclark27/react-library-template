@@ -1,6 +1,6 @@
 {
   "name": "storybook-typescript-react-library",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "main": "build/lib/index.js",
   "types": "build/lib/index.d.ts",
   "files": [
