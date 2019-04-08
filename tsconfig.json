@@ -66,7 +66,7 @@
   "exclude": [
     "build",
     "node_modules",
-    "src/**/*.stories.tsx",
+    "stories",
     "src/**/*.test.tsx"
   ]
 }
