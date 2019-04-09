@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = ({config}) => {
 
   config.module.rules.push({
-    test: /\.tsx$/,
+    test: /\.(ts|tsx)$/,
     loaders: ['awesome-typescript-loader', 'react-docgen-typescript-loader'],
     include: path.resolve(__dirname, '../'),
   });
