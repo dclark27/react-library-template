@@ -1,6 +1,6 @@
 {
   "name": "storybook-typescript-react-library",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "build/lib/index.js",
   "types": "build/lib/index.d.ts",
   "files": [
@@ -38,28 +38,29 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@types/jest": "^24.0.11",
     "@types/node": "^11.13.2",
     "@types/react": "^16.8.13",
     "@types/react-dom": "^16.8.3",
+    "@types/react-test-renderer": "^16.8.1",
     "@types/storybook-addon-jsx": "^5.4.3",
     "@types/storybook__addon-actions": "^3.4.2",
     "@types/storybook__addon-info": "^4.1.1",
     "@types/storybook__addon-knobs": "^4.0.5",
     "@types/storybook__addon-links": "^3.3.4",
     "@types/storybook__react": "^4.0.1",
-    "@types/jest": "^24.0.11",
-    "@types/react-test-renderer": "^16.8.1",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.4",
     "cpx": "^1.5.0",
     "jest": "^24.7.1",
     "npm": "^6.4.1",
-    "react-test-renderer": "^16.8.6",
     "react-docgen-typescript-loader": "^3.1.0",
     "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "react-dom": "^16.8.6",
+    "react-test-renderer": "^16.8.6",
+    "tachyons": "^4.10.0",
     "ts-jest": "^24.0.2",
     "tslint": "^5.15.0",
-    "typescript": "^3.4.2",
-    "react-dom": "^16.8.6"
+    "typescript": "^3.4.2"
   }
 }
