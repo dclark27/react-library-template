@@ -7,13 +7,9 @@ interface IProps {
   text: string;
 }
 
-const style = {
-  fontFamily: "sans-serif"
-}
-
 export const ExampleButton = (props: IProps) => {
   return (
-    <a className="f6 link dim ph3 pv2 mb2 dib white bg-black" style={style}>
+    <a className='f6 link dim br3 ph3 pv2 mb2 dib white bg-light-purple'>
       {props.text}
     </a>
   );

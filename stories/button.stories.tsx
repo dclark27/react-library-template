@@ -13,7 +13,7 @@ stories.add(
     text: 'A simple button'
   })(() => (
     <ExampleButton
-      text={text('text', 'hey!')}
+      text={text('text', 'Hello')}
     />
   )),
 );
