@@ -1,0 +1,11 @@
+#story-root {
+    font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; color: black; 
+    font-weight: 300; 
+    line-height: 1.45; 
+    font-size: 15px;
+    padding: 20px 40px 40px; 
+    border-radius: 2px; 
+    background-color: rgb(255, 255, 255); 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
