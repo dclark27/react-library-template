@@ -1,1 +1,2 @@
-export { ExampleButton } from './ExampleButton/button';
+export { Button } from './components/Button';
+export { useCounter } from './hooks/useCounter';

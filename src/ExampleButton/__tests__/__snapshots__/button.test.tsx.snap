@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Link changes the class when hovered 1`] = `
-<a
-  className="f6 link dim br3 ph3 pv2 mb2 dib white bg-light-purple"
->
-  Cute button!
-</a>
-`;
