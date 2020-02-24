@@ -1,5 +1,7 @@
+# Deprecated. Just use [TSDX](https://github.com/jaredpalmer/tsdx) from @jaredpalmer instead.
 
-# react-library-template
+
+## react-library-template
 ### (formerly Storybook TypeScript React Component Library)
 
 This repo attempts to solve the problem of how to share react hooks, components, and utilities with your team (or all of your personal projects). There are other solutions out there, such as create-react-library, but they are no longer updated and out of date.
